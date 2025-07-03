@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+  <title>Client Info: [[name]]</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+      padding: 2em;
+      color: #333;
+      max-width: 600px;
+      margin: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #005580;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+    .field {
+      margin-bottom: 1em;
+    }
+    .label {
+      font-weight: bold;
+      display: inline-block;
+      width: 120px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Client Profile</h2>
+  <div class="field"><span class="label">Name:</span> [[name]]</div>
+  <div class="field"><span class="label">Email:</span> [[email]]</div>
+  <div class="field"><span class="label">Account #:</span> [[acct]]</div>
+  <div class="field"><span class="label">Routing #:</span> [[route]]</div>
+  <div class="field"><span class="label">Phone:</span> [[phone]]</div>
+</body>
+</html>
+
