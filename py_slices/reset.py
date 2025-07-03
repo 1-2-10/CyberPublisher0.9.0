@@ -1,0 +1,18 @@
+def reset_all(label_template, label_data_xml, label_output, cli_textbox, btn_publish, confirm_checkbox, confirm_var,
+              ext_var, overwrite_var, render_mode_var, enable_log_var, log_mode_var, progress_bar):
+    label_template.configure(text="No template selected")
+    label_data_xml.configure(text="No data XML selected")
+    label_output.configure(text="No output dir selected")
+    ext_var.set(".html")
+    overwrite_var.set(False)
+    render_mode_var.set(False)
+    enable_log_var.set(False)
+    log_mode_var.set("Mode")
+    confirm_var.set(False)
+    confirm_checkbox.pack_forget()
+    btn_publish.configure(state="normal")
+    progress_bar.stop()
+    progress_bar.pack_forget()
+    cli_textbox.configure(state="normal")
+    cli_textbox.delete("1.0", "end")
+    cli_textbox.configure(state="disabled")
